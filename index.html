@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BOOM — Ballistic Fast Delivery</title>
+    <meta
+      name="description"
+      content="BOOM is a futuristic hyperlocal delivery operating system powering local stores with AI and ballistic-fast logistics."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="cursor-dot"></div>
+    <div class="cursor-ring"></div>
+
+    <div id="loader" class="loader">
+      <div class="loader-core">
+        <div class="logo logo-lg">BOOM</div>
+        <p>Booting Hyperlocal Delivery OS...</p>
+        <div class="loader-bar"><span id="loader-progress"></span></div>
+      </div>
+    </div>
+
+    <canvas id="particles"></canvas>
+    <div class="grid-overlay"></div>
+
+    <header class="nav-wrap">
+      <nav class="nav glass">
+        <div class="logo">BOOM</div>
+        <button class="menu-toggle" aria-label="Toggle menu">☰</button>
+        <ul class="nav-links">
+          <li><a href="#dashboard">Dashboard</a></li>
+          <li><a href="#features">Features</a></li>
+          <li><a href="#gamification">XP System</a></li>
+          <li><a href="#expansion">Vision</a></li>
+          <li><a href="#cta" class="cta magnetic">Launch App</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero section" id="hero">
+        <div class="hero-copy reveal">
+          <p class="tagline">Ballistic Fast Delivery</p>
+          <h1>Local Stores. Lightning Fast.</h1>
+          <p>
+            BOOM transforms local stores into AI-powered hyper delivery hubs with
+            cinematic speed, smart inventory intelligence, and urban-scale
+            routing automation.
+          </p>
+          <div class="hero-actions">
+            <button class="btn magnetic">Start Delivery Flow</button>
+            <button class="btn ghost magnetic">Watch System Demo</button>
+          </div>
+        </div>
+        <div class="hero-scene reveal" data-depth="14">
+          <div class="glass panel p1">
+            <h3>Live Orders</h3>
+            <ul id="live-orders"></ul>
+          </div>
+          <div class="glass panel p2">
+            <h3>AI Dispatch Pulse</h3>
+            <div class="progress-wrap"><span style="width: 88%"></span></div>
+            <p>Routing confidence: <b>98.2%</b></p>
+          </div>
+          <div class="glass panel p3">
+            <h3>Zone Heatmap</h3>
+            <div class="heatmap"></div>
+          </div>
+          <div class="hero-routes"></div>
+        </div>
+      </section>
+
+      <section class="section" id="dashboard">
+        <h2 class="reveal">Live Delivery Dashboard</h2>
+        <div class="dashboard-grid reveal">
+          <article class="glass card"><h3>Order Analytics</h3><p>2,874 active</p></article>
+          <article class="glass card"><h3>Avg Timer</h3><p>13:48 mins</p></article>
+          <article class="glass card"><h3>Nearby Stores</h3><p>1,206 online</p></article>
+          <article class="glass card"><h3>AI Recommendations</h3><p>Optimize 37 routes now</p></article>
+          <article class="glass card wide">
+            <h3>Inventory Indicator</h3>
+            <div class="bar-row"><span>Stock Health</span><div><i style="width:74%"></i></div></div>
+            <div class="bar-row"><span>Demand Spike</span><div><i style="width:91%"></i></div></div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section" id="stats">
+        <div class="stats-grid reveal">
+          <article class="glass stat"><h3 data-counter="1200">0</h3><p>Stores</p></article>
+          <article class="glass stat"><h3 data-counter="50000">0</h3><p>Deliveries</p></article>
+          <article class="glass stat"><h3 data-counter="14">0</h3><p>Min Avg Delivery</p></article>
+          <article class="glass stat"><h3 data-counter="98">0</h3><p>Satisfaction</p></article>
+        </div>
+      </section>
+
+      <section class="section" id="features">
+        <h2 class="reveal">Futuristic Feature Matrix</h2>
+        <div class="feature-grid reveal">
+          <article class="glass feature">⚡ Hyperlocal Delivery</article>
+          <article class="glass feature">🧠 AI Inventory Tracking</article>
+          <article class="glass feature">📊 Smart Analytics</article>
+          <article class="glass feature">🛰️ Delivery Optimization</article>
+          <article class="glass feature">📍 Nearby Store Discovery</article>
+          <article class="glass feature">📡 Real-Time Insights</article>
+          <article class="glass feature">🔗 Supplier Connections</article>
+          <article class="glass feature">🚀 Growth Intelligence</article>
+        </div>
+      </section>
+
+      <section class="section" id="how">
+        <h2 class="reveal">How It Works</h2>
+        <div class="flow reveal">
+          <div class="glass step"><span>01</span>Search Product</div>
+          <div class="connector"></div>
+          <div class="glass step"><span>02</span>Store Accepts</div>
+          <div class="connector"></div>
+          <div class="glass step"><span>03</span>Delivered Fast</div>
+        </div>
+      </section>
+
+      <section class="section" id="gamification">
+        <h2 class="reveal">Gamified Growth Engine</h2>
+        <div class="game-grid reveal">
+          <article class="glass card">
+            <h3>XP Progress</h3><div class="progress-wrap"><span style="width:65%"></span></div>
+          </article>
+          <article class="glass card"><h3>Delivery Streak</h3><p>27 Days 🔥</p></article>
+          <article class="glass card"><h3>Top Store Rank</h3><p>#04 Platinum</p></article>
+          <article class="glass card"><h3>Achievement Badges</h3><p>Speed Demon • AI Master • Crowd Favorite</p></article>
+        </div>
+      </section>
+
+      <section class="section" id="owner">
+        <h2 class="reveal">Store Owner Intelligence</h2>
+        <div class="dashboard-grid reveal">
+          <article class="glass card"><h3>AI Growth Insights</h3><p>+42% repeat buyers</p></article>
+          <article class="glass card"><h3>Smart Inventory</h3><p>Auto replenish triggers</p></article>
+          <article class="glass card"><h3>Customer Analytics</h3><p>Peak at 8:00 PM zones</p></article>
+          <article class="glass card"><h3>Delivery Automation</h3><p>Dispatch in &lt; 10 sec</p></article>
+        </div>
+      </section>
+
+      <section class="section" id="delivery-exp">
+        <h2 class="reveal">Delivery Experience Simulation</h2>
+        <div class="glass map reveal"><div class="route-line"></div><div class="pulse a"></div><div class="pulse b"></div><div class="pulse c"></div></div>
+      </section>
+
+      <section class="section" id="testimonials">
+        <h2 class="reveal">What the Ecosystem Says</h2>
+        <div class="feature-grid reveal">
+          <article class="glass feature">“BOOM turned our kirana into a 14-min delivery machine.” — Aarya</article>
+          <article class="glass feature">“Feels like running a gaming dashboard, not a shop panel.” — Rehan</article>
+          <article class="glass feature">“AI recommendations increased profit in weeks.” — Meera</article>
+        </div>
+      </section>
+
+      <section class="section" id="expansion">
+        <h2 class="reveal">Expansion Vision</h2>
+        <div class="timeline reveal">
+          <div class="glass mile"><b>Phase 1</b><p>Bangalore Command Hub</p></div>
+          <div class="glass mile"><b>Phase 2</b><p>India-Wide Network OS</p></div>
+          <div class="glass mile"><b>Phase 3</b><p>Global Hyperlocal Grid</p></div>
+        </div>
+      </section>
+
+      <section class="section cta-block" id="cta">
+        <h2 class="reveal">The Future of Hyper Delivery Starts Here.</h2>
+        <button class="btn magnetic reveal">Join BOOM Network</button>
+      </section>
+    </main>
+
+    <footer class="footer glass">
+      <div class="logo">BOOM</div>
+      <p>Ballistic Fast Delivery • Futuristic Local Commerce OS</p>
+      <div class="socials"><a href="#">X</a><a href="#">IG</a><a href="#">LN</a></div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
